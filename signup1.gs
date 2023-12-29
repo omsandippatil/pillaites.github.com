@@ -8,8 +8,8 @@ function doGet(e) {
     return ContentService.createTextOutput("Missing email or password parameters");
   }
   
-  var sheet = SpreadsheetApp.openById('1KSe4G8KAB9cFif6jGIhN_TomrTzJaw295FAwxcC0nqg').getActiveSheet();
-  var emailColumn = 2; // Assuming email is in the first column
+  var sheet = SpreadsheetApp.openById('Your Sheet ID').getActiveSheet();
+  var emailColumn = 2;  
 
   // Check if the email already exists
   var emailExists = sheet.getRange(2, emailColumn, sheet.getLastRow() - 1, 1)
