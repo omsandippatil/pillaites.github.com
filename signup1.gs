@@ -21,10 +21,7 @@ function doGet(e) {
     return ContentService.createTextOutput("False");
   } else {
     // Add a new row with the email and password
-   
-   var lastrow = sheet.getLastRow();
-    var newRow = [lastrow,email, password];
-    sheet.appendRow(newRow);
     return ContentService.createTextOutput("True");
   }
 }
+
